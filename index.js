@@ -5,7 +5,7 @@ const productHandler = require("./routeHandler/productHandler");
 const orderHandler = require("./routeHandler/orderHandler");
 require("dotenv").config();
 
-const port = process.env.PORT;
+const port = 5000;
 // Initialize the Express app.
 const app = express();
 app.use(express.json());
