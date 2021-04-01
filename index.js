@@ -19,7 +19,11 @@ mongoose
   .then(() => console.log("Database connected successfully"))
   .catch((err) => console.log(err));
 
-// Event routs
+// Check server status
+app.get("/", (req, res) => {
+  res.status(200).json("Server started successfully");
+});
+// App routs
 app.use("/product", productHandler);
 app.use("/order", orderHandler);
 
